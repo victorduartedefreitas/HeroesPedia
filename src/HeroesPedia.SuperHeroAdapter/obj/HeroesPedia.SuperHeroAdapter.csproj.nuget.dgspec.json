@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj": {}
+    "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj": {
+    "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj",
+        "projectUniqueName": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj",
         "projectName": "HeroesPedia.SuperHeroAdapter",
-        "projectPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj",
+        "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.SuperHeroAdapter\\obj\\",
+        "outputPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

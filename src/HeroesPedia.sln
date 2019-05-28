@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroesPedia.Android", "HeroesPedia\HeroesPedia.Android\HeroesPedia.Android.csproj", "{CEE69E4D-7E7D-4837-BD2E-50D6140CB6C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroesPedia.Application", "HeroesPedia\HeroesPedia\HeroesPedia.Application.csproj", "{4D4949CC-8F7D-421D-BCA4-8505948C0E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroesPedia.Application", "HeroesPedia\HeroesPedia\HeroesPedia.Application.csproj", "{4D4949CC-8F7D-421D-BCA4-8505948C0E5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Core", "0 Core", "{8BDF7E15-7D2E-4D01-9A3A-C414235D06AA}"
 EndProject
@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Infra", "1 Infra", "{C32A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Presentation", "2 Presentation", "{E4FA86C2-D76A-4A0C-B9F8-47F69B1309B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroesPedia.Domain", "HeroesPedia.Domain\HeroesPedia.Domain.csproj", "{EE05F396-84B7-4764-81DA-C6C021DE4360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroesPedia.Domain", "HeroesPedia.Domain\HeroesPedia.Domain.csproj", "{EE05F396-84B7-4764-81DA-C6C021DE4360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroesPedia.SuperHeroAdapter", "HeroesPedia.SuperHeroAdapter\HeroesPedia.SuperHeroAdapter.csproj", "{6071CED7-38C7-44C7-8B58-E1F786B138B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroesPedia.SuperHeroAdapter", "HeroesPedia.SuperHeroAdapter\HeroesPedia.SuperHeroAdapter.csproj", "{6071CED7-38C7-44C7-8B58-E1F786B138B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +48,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{CEE69E4D-7E7D-4837-BD2E-50D6140CB6C1} = {E4FA86C2-D76A-4A0C-B9F8-47F69B1309B6}
 		{4D4949CC-8F7D-421D-BCA4-8505948C0E5C} = {8BDF7E15-7D2E-4D01-9A3A-C414235D06AA}
 		{EE05F396-84B7-4764-81DA-C6C021DE4360} = {8BDF7E15-7D2E-4D01-9A3A-C414235D06AA}
 		{6071CED7-38C7-44C7-8B58-E1F786B138B3} = {C32AEA5D-A7D0-4B10-B4F6-FE116E739647}

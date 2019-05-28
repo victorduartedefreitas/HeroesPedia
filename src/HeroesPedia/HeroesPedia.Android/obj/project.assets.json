@@ -2222,11 +2222,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Android\\HeroesPedia.Android.csproj",
+      "projectUniqueName": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia.Android\\HeroesPedia.Android.csproj",
       "projectName": "HeroesPedia.Android",
-      "projectPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Android\\HeroesPedia.Android.csproj",
+      "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia.Android\\HeroesPedia.Android.csproj",
       "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Android\\obj\\",
+      "outputPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2247,8 +2247,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {
-              "projectPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj"
+            "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {
+              "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj"
             }
           }
         }

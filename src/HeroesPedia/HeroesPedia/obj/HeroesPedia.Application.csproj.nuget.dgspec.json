@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {}
+    "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj": {
+    "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj",
+        "projectUniqueName": "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj",
         "projectName": "HeroesPedia.Domain",
-        "projectPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj",
+        "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.Domain\\obj\\",
+        "outputPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {
+    "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj",
+        "projectUniqueName": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj",
         "projectName": "HeroesPedia.Application",
-        "projectPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj",
+        "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia\\HeroesPedia\\obj\\",
+        "outputPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -86,8 +86,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\HeroesPedia\\HeroesPedia\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj"
+              "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj": {
+                "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj"
               }
             }
           }
