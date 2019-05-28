@@ -89,9 +89,19 @@ namespace HeroesPedia.Application.ViewModels
                 IsBusy = true;
 
                 var result = await superHeroApiAdapter.SearchHeroAsync(SearchText);
+
+                if (result.Results == null || result.Results.Count == 0)
+                {
+                    await ShowAlertMessage("Não foi possível encontrar um herói com o tempo pesquisado.", "Pesquisa", "OK");
+                    return;
+                }
+
                 Heroes = new ObservableCollection<Hero>(result.Results);
             }
-            catch { }
+            catch
+            {
+                await ShowAlertMessage("Ocorreu um erro inesperado na pesquisa.", "Pesquisa", "OK");
+            }
             finally
             {
                 IsBusy = false;

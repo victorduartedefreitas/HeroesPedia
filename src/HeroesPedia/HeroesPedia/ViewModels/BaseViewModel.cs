@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 namespace HeroesPedia.Application.ViewModels
 {
@@ -99,6 +100,19 @@ namespace HeroesPedia.Application.ViewModels
                 _changedProperties.Add(propertyName);
 
             return true;
+        }
+
+        public async Task<bool> ShowConfirmAlertMessage(string title, string message, string acceptButton = "", string cancelButton = "")
+        {
+            return await PageDialogService.DisplayAlertAsync(message, title,
+                !string.IsNullOrEmpty(acceptButton) ? acceptButton : "OK",
+                !string.IsNullOrEmpty(cancelButton) ? cancelButton : "Cancelar");
+        }
+
+        public async Task ShowAlertMessage(string title, string message, string cancelButton = "")
+        {
+            await PageDialogService.DisplayAlertAsync(message, title,
+                !string.IsNullOrEmpty(cancelButton) ? cancelButton : "Cancelar");
         }
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)

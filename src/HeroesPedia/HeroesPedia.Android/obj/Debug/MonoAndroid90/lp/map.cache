@@ -61,3 +61,5 @@ System.Diagnostics.Tools
 System.Reflection.Primitives
 System.ComponentModel
 System.Reflection.Extensions
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity

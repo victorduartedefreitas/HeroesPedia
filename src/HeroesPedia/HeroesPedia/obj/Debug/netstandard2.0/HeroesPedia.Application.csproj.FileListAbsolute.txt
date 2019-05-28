@@ -27,5 +27,4 @@ C:\projetos\HeroesPedia\src\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\ref
 C:\projetos\HeroesPedia\src\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.Application.pdb
 C:\projetos\HeroesPedia\src\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.Domain.pdb
 C:\projetos\HeroesPedia\src\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.csproj.CopyComplete
-C:\projetos\HeroesPedia\src\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\XamlC.stamp
 C:\projetos\HeroesPedia\src\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\Views\HeroDetailsView.xaml.g.cs
