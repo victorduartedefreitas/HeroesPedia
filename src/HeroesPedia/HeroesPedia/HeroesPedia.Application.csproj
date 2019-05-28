@@ -16,6 +16,7 @@
     <PackageReference Include="Prism.Autofac.Forms" Version="7.1.0.431" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.0.0.425677" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,10 +26,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
+    <ProjectReference Include="..\..\HeroesPedia.Domain\HeroesPedia.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HeroesPedia.Domain\HeroesPedia.Domain.csproj" />
+    <EmbeddedResource Update="Views\HeroDetailsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SearchHeroView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

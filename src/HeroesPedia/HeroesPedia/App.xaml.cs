@@ -1,4 +1,5 @@
-﻿using Prism;
+﻿using HeroesPedia.Application.Views;
+using Prism;
 using Prism.Autofac;
 using Prism.Ioc;
 using System;
@@ -12,12 +13,13 @@ namespace HeroesPedia.Application
         public App(IPlatformInitializer platformInitializer = null)
             : base(platformInitializer)
         {
-            //MainPage = new MainPage();
         }
 
         protected override void OnInitialized()
         {
             InitializeComponent();
+
+            NavigationService.NavigateAsync("SearchHeroView");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HeroesPedia.Application.Views.HeroDetailsView"
+             Visual="Material">
+    <ScrollView>
+        <StackLayout Spacing="10" Padding="10"
+                     HorizontalOptions="StartAndExpand">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"
+                       Source="{Binding Hero.Image.Uri}"
+                       WidthRequest="100"
+                       HeightRequest="150"/>
+
+                <Label Grid.Row="0" Grid.Column="1"
+                       Text="Nome:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       Text="{Binding Hero.Name}"/>
+
+                <Label Grid.Row="2" Grid.Column="1"
+                       Text="Criado por:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="1"
+                       Text="{Binding Hero.Biography.Publisher}"/>
+            </Grid>
+            
+            <Label Text="Biografia"
+                   FontSize="20" FontAttributes="Bold"/>
+            <Grid VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0"
+                       Text="Verdadeiro nome:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="{Binding Hero.Biography.FullName}"/>
+                
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Local de nascimento:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="0"
+                       Text="{Binding Hero.Biography.PlaceOfBirth}"/>
+
+                <Label Grid.Row="4" Grid.Column="0"
+                       Text="Primeira aparição:" FontAttributes="Bold"/>
+                <Label Grid.Row="5" Grid.Column="0"
+                       Text="{Binding Hero.Biography.FirstAppearance}"/>
+
+                <Label Grid.Row="6" Grid.Column="0"
+                       Text="Alinhamento:" FontAttributes="Bold"/>
+                <Label Grid.Row="7" Grid.Column="0"
+                       Text="{Binding Hero.Biography.Alignment}"/>
+
+                <Label Grid.Row="0" Grid.Column="1"
+                       Text="Conhecido como:" FontAttributes="Bold"/>
+                <ListView ItemsSource="{Binding Hero.Biography.Aliases}"
+                          Grid.Row="1" Grid.Column="1" Grid.RowSpan="7"/>
+            </Grid>
+
+            <Label Text="Aparência física"
+                   FontSize="20" FontAttributes="Bold"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0"
+                       Text="Gênero:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="{Binding Hero.Appearance.Gender}"/>
+
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Raça:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="0"
+                       Text="{Binding Hero.Appearance.Race}"/>
+
+                <Label Grid.Row="0" Grid.Column="1"
+                       Text="Altura:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       Text="{Binding Hero.Appearance.Height[1]}"/>
+                
+                <Label Grid.Row="2" Grid.Column="1"
+                       Text="Peso:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="1"
+                       Text="{Binding Hero.Appearance.Weight[1]}"/>
+
+                <Label Grid.Row="0" Grid.Column="2"
+                       Text="Cor dos olhos:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="2"
+                       Text="{Binding Hero.Appearance.EyeColor}"/>
+
+                <Label Grid.Row="2" Grid.Column="2"
+                       Text="Cor dos cabelos:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="2"
+                       Text="{Binding Hero.Appearance.HairColor}"/>
+            </Grid>
+
+            <Label Text="Ficha ténica"
+                   FontSize="20" FontAttributes="Bold"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0"
+                       Text="Inteligência:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="{Binding Hero.Powerstats.Intelligence}"/>
+
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Força:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="0"
+                       Text="{Binding Hero.Powerstats.Strength}"/>
+
+                <Label Grid.Row="0" Grid.Column="1"
+                       Text="Velocidade:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       Text="{Binding Hero.Powerstats.Speed}"/>
+
+                <Label Grid.Row="2" Grid.Column="1"
+                       Text="Resistência:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="1"
+                       Text="{Binding Hero.Powerstats.Durability}"/>
+
+                <Label Grid.Row="0" Grid.Column="2"
+                       Text="Poder:" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="2"
+                       Text="{Binding Hero.Powerstats.Power}"/>
+
+                <Label Grid.Row="2" Grid.Column="2"
+                       Text="Combate:" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Grid.Column="2"
+                       Text="{Binding Hero.Powerstats.Combat}"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

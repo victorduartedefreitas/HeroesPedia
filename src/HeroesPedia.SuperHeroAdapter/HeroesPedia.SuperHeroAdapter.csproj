@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+    <PackageReference Include="Prism.Core" Version="7.1.0.431" />
     <PackageReference Include="Refit" Version="4.6.107" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeroesPedia.Domain\HeroesPedia.Domain.csproj" />
   </ItemGroup>
 
 </Project>

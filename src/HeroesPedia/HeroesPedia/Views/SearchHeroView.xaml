@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HeroesPedia.Application.Views.SearchHeroView"
+             Visual="Material"
+             x:Name="searchHeroView">
+    <ScrollView>
+        <StackLayout>
+            <Entry Text="{Binding SearchText}"
+               Placeholder="Informe o nome do personagem"/>
+            <Button Text="Pesquisar"
+                    Command="{Binding SearchCommand}"
+                    HorizontalOptions="StartAndExpand"/>
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+                               IsVisible="{Binding IsBusy}"
+                               Color="Black"/>
+
+            <ListView HasUnevenRows="True"
+                      ItemsSource="{Binding Heroes}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Frame Padding="16">
+                                    <StackLayout Spacing="16">
+                                        <Image Source="{Binding Image.Uri}" 
+                                               Margin="-16,-16,-16,0" 
+                                               Aspect="AspectFill" />
+                                        <Label Text="{Binding Name}" 
+                                               FontSize="24" 
+                                               TextColor="{StaticResource TextColor}"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Profissão: "
+                                                   TextColor="{StaticResource TextColor}"
+                                                   FontAttributes="Bold"/>
+                                            <Label Text="{Binding Work.Occupation}"
+                                                   TextColor="{StaticResource TextColor}"
+                                                   FontSize="14" />
+                                        </StackLayout>
+                                        <Button Text="mais informações" 
+                                                HorizontalOptions="End"
+                                                Command="{Binding Path=BindingContext.MoreInfoCommand, Source={x:Reference searchHeroView}}"
+                                                CommandParameter="{Binding Id}"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

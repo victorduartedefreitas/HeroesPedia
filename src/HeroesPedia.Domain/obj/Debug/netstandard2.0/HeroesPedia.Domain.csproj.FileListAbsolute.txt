@@ -1,0 +1,9 @@
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\bin\Debug\netstandard2.0\HeroesPedia.Domain.deps.json
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\bin\Debug\netstandard2.0\HeroesPedia.Domain.dll
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\bin\Debug\netstandard2.0\HeroesPedia.Domain.pdb
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\obj\Debug\netstandard2.0\HeroesPedia.Domain.csprojAssemblyReference.cache
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\obj\Debug\netstandard2.0\HeroesPedia.Domain.csproj.CoreCompileInputs.cache
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\obj\Debug\netstandard2.0\HeroesPedia.Domain.AssemblyInfoInputs.cache
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\obj\Debug\netstandard2.0\HeroesPedia.Domain.AssemblyInfo.cs
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\obj\Debug\netstandard2.0\HeroesPedia.Domain.dll
+C:\projetos\HeroesPedia\src\HeroesPedia.Domain\obj\Debug\netstandard2.0\HeroesPedia.Domain.pdb
