@@ -1,0 +1,13 @@
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.Application.deps.json
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.Application.dll
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\ref\HeroesPedia.Application.dll
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.Application.pdb
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.csprojAssemblyReference.cache
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.AssemblyInfoInputs.cache
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.AssemblyInfo.cs
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.dll
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\ref\HeroesPedia.Application.dll
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.Application.pdb

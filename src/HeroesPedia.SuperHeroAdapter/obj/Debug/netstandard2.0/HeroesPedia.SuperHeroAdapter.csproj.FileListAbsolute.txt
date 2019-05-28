@@ -1,0 +1,6 @@
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.deps.json
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.dll
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.csprojAssemblyReference.cache
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.csproj.CoreCompileInputs.cache
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.AssemblyInfoInputs.cache
+C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.AssemblyInfo.cs
