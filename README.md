@@ -3,3 +3,4 @@ A xamarin mobile app (only android, yet...) that simulates a "heroes wiki" using
 - Prism
 - Autofac
 - Refit
+- AutoMapper
