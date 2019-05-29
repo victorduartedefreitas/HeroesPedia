@@ -1,10 +1,11 @@
 ﻿using HeroesPedia.Domain.ViewModels;
 using HeroesPedia.Domain.Views;
+using Prism.AppModel;
+using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
@@ -42,7 +43,7 @@ namespace HeroesPedia.Application.ViewModels
         #endregion
     }
 
-    public abstract class BaseViewModel : IBaseViewModel, INotifyPropertyChanged, INavigatedAware
+    public abstract class BaseViewModel : BindableBase, IBaseViewModel, INavigatedAware, INavigatedAwareAsync, IConfirmNavigation, IConfirmNavigationAsync, IDestructible, IApplicationLifecycleAware, INavigationPageOptions
     {
         #region Constructors
 
@@ -66,9 +67,6 @@ namespace HeroesPedia.Application.ViewModels
 
         #region Properties & Events
 
-        protected INavigationService NavigationService { get => navigationService; }
-        protected IPageDialogService PageDialogService { get => pageDialogService; }
-
         public bool IsBusy
         {
             get => _isBusy;
@@ -82,38 +80,35 @@ namespace HeroesPedia.Application.ViewModels
 
         public bool HasChanged => ChangedProperties.Count > 0;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public virtual bool ClearNavigationStackOnNavigation => false;
 
         #endregion
 
         #region Public Methods
 
-        public bool SetProperty<T>(ref T field, T value, [CallerMemberName]string propertyName = null)
+        protected override bool SetProperty<T>(ref T storage, T value, Action onChanged, [CallerMemberName] string propertyName = null)
         {
-            if (EqualityComparer<T>.Default.Equals(field, value))
-                return false;
+            var setResult = base.SetProperty(ref storage, value, onChanged, propertyName);
 
-            field = value;
-
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            if (!_changedProperties.Contains(propertyName))
+            if (setResult && !_changedProperties.Contains(propertyName))
                 _changedProperties.Add(propertyName);
 
-            return true;
+            return setResult;
         }
 
-        public async Task<bool> ShowConfirmAlertMessage(string title, string message, string acceptButton = "", string cancelButton = "")
+        protected override bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
         {
-            return await PageDialogService.DisplayAlertAsync(message, title,
-                !string.IsNullOrEmpty(acceptButton) ? acceptButton : "OK",
-                !string.IsNullOrEmpty(cancelButton) ? cancelButton : "Cancelar");
+            var setResult = base.SetProperty(ref storage, value, propertyName);
+
+            if (setResult && !_changedProperties.Contains(propertyName))
+                _changedProperties.Add(propertyName);
+
+            return setResult;
         }
 
-        public async Task ShowAlertMessage(string title, string message, string cancelButton = "")
-        {
-            await PageDialogService.DisplayAlertAsync(message, title,
-                !string.IsNullOrEmpty(cancelButton) ? cancelButton : "Cancelar");
-        }
+        #endregion
+
+        #region Virtual Methods
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
@@ -121,6 +116,87 @@ namespace HeroesPedia.Application.ViewModels
 
         public virtual void OnNavigatedTo(INavigationParameters parameters)
         {
+        }
+
+        public async virtual Task OnNavigatedToAsync(INavigationParameters parameters)
+        {
+            await Task.FromResult(default(object));
+        }
+
+        public virtual bool CanNavigate(INavigationParameters parameters)
+        {
+            return true;
+        }
+
+        public async virtual Task<bool> CanNavigateAsync(INavigationParameters parameters)
+        {
+            return await Task.FromResult(default(bool));
+        }
+
+        public virtual void Destroy()
+        {
+        }
+
+        public virtual void OnResume()
+        {
+        }
+
+        public virtual void OnSleep()
+        {
+        }
+
+        #endregion
+
+        #region Protected Methods
+
+        protected async Task<INavigationResult> GoBackAsync()
+        {
+            return await navigationService.GoBackAsync();
+        }
+
+        protected async Task<INavigationResult> GoBackAsync(INavigationParameters parameters)
+        {
+            return await navigationService.GoBackAsync(parameters);
+        }
+
+        protected async Task<INavigationResult> NavigateAsync(Uri uri)
+        {
+            return await navigationService.NavigateAsync(uri);
+        }
+
+        protected async Task<INavigationResult> NavigateAsync(Uri uri, INavigationParameters parameters)
+        {
+            return await navigationService.NavigateAsync(uri, parameters);
+        }
+
+        protected async Task<INavigationResult> NavigateAsync(string name)
+        {
+            return await navigationService.NavigateAsync(name);
+        }
+
+        protected async Task<INavigationResult> NavigateAsync(string name, INavigationParameters parameters)
+        {
+            return await navigationService.NavigateAsync(name, parameters);
+        }
+
+        protected async Task<string> DisplayActionSheetAsync(string title, string cancelButton, string destroyButton, params string[] otherButtons)
+        {
+            return await pageDialogService.DisplayActionSheetAsync(title, cancelButton, destroyButton, otherButtons);
+        }
+
+        protected async Task DisplayActionSheetAsync(string title, params IActionSheetButton[] buttons)
+        {
+            await pageDialogService.DisplayActionSheetAsync(title, buttons);
+        }
+
+        protected async Task<bool> DisplayAlertAsync(string title, string message, string acceptButton, string cancelButton)
+        {
+            return await pageDialogService.DisplayAlertAsync(title, message, acceptButton, cancelButton);
+        }
+
+        protected async Task DisplayAlertAsync(string title, string message, string cancelButton)
+        {
+            await pageDialogService.DisplayAlertAsync(title, message, cancelButton);
         }
 
         #endregion

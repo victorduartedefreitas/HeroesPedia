@@ -16,3 +16,15 @@ C:\projetos\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.
 C:\projetos\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.csproj.CopyComplete
 C:\projetos\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.dll
 C:\projetos\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.pdb
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.deps.json
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.dll
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.pdb
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.Domain.dll
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\bin\Debug\netstandard2.0\HeroesPedia.Domain.pdb
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.csprojAssemblyReference.cache
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.csproj.CoreCompileInputs.cache
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.AssemblyInfoInputs.cache
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.AssemblyInfo.cs
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.csproj.CopyComplete
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.dll
+C:\git\HeroesPedia\src\HeroesPedia.SuperHeroAdapter\obj\Debug\netstandard2.0\HeroesPedia.SuperHeroAdapter.pdb

@@ -48,6 +48,80 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj",
+        "projectName": "HeroesPedia.SuperHeroAdapter",
+        "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj",
+        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj": {
+                "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.Domain\\HeroesPedia.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[7.1.0.431, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[4.6.107, )"
             }
           },
           "imports": [
@@ -86,6 +160,9 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
+              "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj": {
+                "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia.SuperHeroAdapter\\HeroesPedia.SuperHeroAdapter.csproj"
+              },
               "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj": {
                 "projectPath": "C:\\git\\HeroesPedia\\src\\HeroesPedia\\HeroesPedia\\HeroesPedia.Application.csproj"
               }
@@ -96,6 +173,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"
@@ -189,11 +270,19 @@
               "target": "Package",
               "version": "[7.1.0.431, )"
             },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.1.0, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
               "target": "Package",
               "version": "[4.0.0.425677, )"
             }

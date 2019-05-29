@@ -8,6 +8,7 @@ using Prism.Services;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace HeroesPedia.Application.ViewModels
@@ -44,7 +45,7 @@ namespace HeroesPedia.Application.ViewModels
             get
             {
                 if (searchCommand == null)
-                    searchCommand = new DelegateCommand(SearchHero, CanSearchHero);
+                    searchCommand = new DelegateCommand(async () => await SearchHero(), CanSearchHero);
 
                 return searchCommand;
             }
@@ -82,7 +83,7 @@ namespace HeroesPedia.Application.ViewModels
             return true;
         }
 
-        public async void SearchHero()
+        public async Task SearchHero()
         {
             try
             {
@@ -92,7 +93,7 @@ namespace HeroesPedia.Application.ViewModels
 
                 if (result.Results == null || result.Results.Count == 0)
                 {
-                    await ShowAlertMessage("Não foi possível encontrar um herói com o tempo pesquisado.", "Pesquisa", "OK");
+                    await DisplayAlertAsync("Não foi possível encontrar um herói com o tempo pesquisado.", "Pesquisa", "OK");
                     return;
                 }
 
@@ -100,7 +101,7 @@ namespace HeroesPedia.Application.ViewModels
             }
             catch
             {
-                await ShowAlertMessage("Ocorreu um erro inesperado na pesquisa.", "Pesquisa", "OK");
+                await DisplayAlertAsync("Ocorreu um erro inesperado na pesquisa.", "Pesquisa", "OK");
             }
             finally
             {
@@ -122,7 +123,7 @@ namespace HeroesPedia.Application.ViewModels
 
             var parameters = new NavigationParameters();
             parameters.Add("Hero", hero);
-            NavigationService.NavigateAsync("HeroDetailsView", parameters);
+            NavigateAsync("HeroDetailsView", parameters);
         }
 
         #endregion
