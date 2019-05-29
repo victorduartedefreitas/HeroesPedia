@@ -1,8 +1,0 @@
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.deps.json
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\bin\Debug\netstandard2.0\HeroesPedia.dll
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.csprojAssemblyReference.cache
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.csproj.CoreCompileInputs.cache
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.AssemblyInfoInputs.cache
-C:\Projetos\HeroesPedia\HeroesPedia\HeroesPedia\HeroesPedia\obj\Debug\netstandard2.0\HeroesPedia.AssemblyInfo.cs
