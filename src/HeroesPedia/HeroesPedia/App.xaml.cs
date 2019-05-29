@@ -1,10 +1,7 @@
-﻿using HeroesPedia.Application.Views;
-using Prism;
+﻿using Prism;
 using Prism.Autofac;
 using Prism.Ioc;
-using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Prism.Navigation;
 
 namespace HeroesPedia.Application
 {
@@ -13,6 +10,11 @@ namespace HeroesPedia.Application
         public App(IPlatformInitializer platformInitializer = null)
             : base(platformInitializer)
         {
+        }
+
+        public INavigationService GetNavigationService()
+        {
+            return NavigationService;
         }
 
         protected override void OnInitialized()

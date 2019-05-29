@@ -2,7 +2,6 @@
 using HeroesPedia.Domain.ViewModels;
 using HeroesPedia.Domain.Views;
 using Prism.Navigation;
-using Prism.Services;
 
 namespace HeroesPedia.Application.ViewModels
 {
@@ -10,10 +9,8 @@ namespace HeroesPedia.Application.ViewModels
     {
         #region Constructors
 
-        public HeroDetailsViewModel(INavigationService navigationService,
-            IPageDialogService pageDialogService,
-            IHeroDetailsView view)
-            : base(navigationService, pageDialogService, view)
+        public HeroDetailsViewModel(IHeroDetailsView view)
+            : base(view)
         {
         }
 

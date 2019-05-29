@@ -4,7 +4,6 @@ using HeroesPedia.Domain.ViewModels;
 using HeroesPedia.Domain.Views;
 using Prism.Commands;
 using Prism.Navigation;
-using Prism.Services;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -17,11 +16,9 @@ namespace HeroesPedia.Application.ViewModels
     {
         #region Constructors
 
-        public SearchHeroViewModel(INavigationService navigationService,
-            IPageDialogService pageDialogService,
-            ISearchHeroView view,
+        public SearchHeroViewModel(ISearchHeroView view,
             ISuperHeroApiAdapter superHeroApiAdapter)
-            : base(navigationService, pageDialogService, view)
+            : base(view)
         {
             this.superHeroApiAdapter = superHeroApiAdapter ?? throw new ArgumentNullException(nameof(superHeroApiAdapter));
         }
@@ -93,7 +90,7 @@ namespace HeroesPedia.Application.ViewModels
 
                 if (result.Results == null || result.Results.Count == 0)
                 {
-                    await DisplayAlertAsync("Não foi possível encontrar um herói com o tempo pesquisado.", "Pesquisa", "OK");
+                    await DisplayAlertAsync("Pesquisa", "Não foi possível encontrar um herói com o termo pesquisado.", "OK");
                     return;
                 }
 
@@ -101,7 +98,7 @@ namespace HeroesPedia.Application.ViewModels
             }
             catch
             {
-                await DisplayAlertAsync("Ocorreu um erro inesperado na pesquisa.", "Pesquisa", "OK");
+                await DisplayAlertAsync("Pesquisa", "Ocorreu um erro inesperado na pesquisa.", "OK");
             }
             finally
             {

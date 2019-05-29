@@ -16,10 +16,8 @@ namespace HeroesPedia.Application.ViewModels
     {
         #region Constructors
 
-        public BaseViewModel(INavigationService navigationService,
-            IPageDialogService pageDialogService,
-            TView view)
-            : base(navigationService, pageDialogService)
+        public BaseViewModel(TView view)
+            : base()
         {
             CurrentView = view;
         }
@@ -47,11 +45,11 @@ namespace HeroesPedia.Application.ViewModels
     {
         #region Constructors
 
-        public BaseViewModel(INavigationService navigationService,
-            IPageDialogService pageDialogService)
+        public BaseViewModel()
+            : base()
         {
-            this.navigationService = navigationService ?? throw new ArgumentNullException(nameof(navigationService));
-            this.pageDialogService = pageDialogService ?? throw new ArgumentNullException(nameof(pageDialogService));
+            navigationService = ResolveDependency<INavigationService>(Prism.PrismApplicationBase.NavigationServiceName);
+            pageDialogService = ResolveDependency<IPageDialogService>();
         }
 
         #endregion
@@ -86,25 +84,7 @@ namespace HeroesPedia.Application.ViewModels
 
         #region Public Methods
 
-        protected override bool SetProperty<T>(ref T storage, T value, Action onChanged, [CallerMemberName] string propertyName = null)
-        {
-            var setResult = base.SetProperty(ref storage, value, onChanged, propertyName);
 
-            if (setResult && !_changedProperties.Contains(propertyName))
-                _changedProperties.Add(propertyName);
-
-            return setResult;
-        }
-
-        protected override bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
-        {
-            var setResult = base.SetProperty(ref storage, value, propertyName);
-
-            if (setResult && !_changedProperties.Contains(propertyName))
-                _changedProperties.Add(propertyName);
-
-            return setResult;
-        }
 
         #endregion
 
@@ -130,7 +110,7 @@ namespace HeroesPedia.Application.ViewModels
 
         public async virtual Task<bool> CanNavigateAsync(INavigationParameters parameters)
         {
-            return await Task.FromResult(default(bool));
+            return await Task.FromResult(true);
         }
 
         public virtual void Destroy()
@@ -148,6 +128,39 @@ namespace HeroesPedia.Application.ViewModels
         #endregion
 
         #region Protected Methods
+
+        protected T ResolveDependency<T>()
+        {
+            return ResolveDependency<T>(string.Empty);
+        }
+
+        protected T ResolveDependency<T>(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+                return (T)Prism.PrismApplicationBase.Current.Container.Resolve(typeof(T));
+            else
+                return (T)Prism.PrismApplicationBase.Current.Container.Resolve(typeof(T), name);
+        }
+
+        protected override bool SetProperty<T>(ref T storage, T value, Action onChanged, [CallerMemberName] string propertyName = null)
+        {
+            var setResult = base.SetProperty(ref storage, value, onChanged, propertyName);
+
+            if (setResult && !_changedProperties.Contains(propertyName))
+                _changedProperties.Add(propertyName);
+
+            return setResult;
+        }
+
+        protected override bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+        {
+            var setResult = base.SetProperty(ref storage, value, propertyName);
+
+            if (setResult && !_changedProperties.Contains(propertyName))
+                _changedProperties.Add(propertyName);
+
+            return setResult;
+        }
 
         protected async Task<INavigationResult> GoBackAsync()
         {
